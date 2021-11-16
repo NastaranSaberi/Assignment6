@@ -1,0 +1,80 @@
+*{
+margin: 0;
+padding: 0;
+font-family: cursive;
+text-transform: capitalize;
+text-decoration: none;
+
+}
+
+body{
+min-height: 100vh;
+background-color: black;
+background-position: center;
+
+}
+header{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background: black;
+box-shadow: 0 5px 10px black;
+padding: 0px 7px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;
+
+}
+
+header  .Logo{
+ font-size: 30px;
+ font-weight: bolder;
+ color: white;
+}
+
+
+header .navbar ul{
+     list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+font-size: 20px;
+padding: 20px;
+color: white;
+display: block;
+}
+
+header .navbar ul li a:hover{
+    background: white;
+    color:	#FF0000 ;	
+
+}
+
+header .navbar ul li ul{
+position: absolute;
+left: 0px;
+background: tomato;
+color: white;
+display: none;
+width: 200px;
+}
+header .navbar ul li ul li{
+width: 100%;
+border-top:1px solid black ;
+
+}
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+display:initial ;
+}
